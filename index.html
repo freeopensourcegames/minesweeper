@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Minesweeper</h1>
+        <div id="settings">
+            <form id="game-settings">
+                <div class="form-row">
+                    <label for="field-size">Field Size:</label>
+                    <input type="number" id="field-size" name="field-size" value="8" min="5" max="20">
+                </div>
+                <div class="form-row">
+                    <label for="mine-count">Number of Mines:</label>
+                    <input type="number" id="mine-count" name="mine-count" value="10" min="5">
+                </div>
+                <div class="form-row">
+                    <button type="submit">Start Game</button>
+                </div>
+            </form>
+        </div>
+        <div id="board"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
